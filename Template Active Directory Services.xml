@@ -9,8 +9,8 @@
     </groups>
     <templates>
         <template>
-            <template>4Linux - Windows Server Active Directory</template>
-            <name>4Linux - Windows Server Active Directory</name>
+            <template>Template Windows Server Active Directory</template>
+            <name>Template Windows Server Active Directory</name>
             <groups>
                 <group>
                     <name>Templates</name>
@@ -23,7 +23,7 @@
             </applications>
             <items>
                 <item>
-                    <name>AD Service: Centro de distribuição de chaves Kerberos</name>
+                    <name>AD Service: Key Distribution Center</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -67,7 +67,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Chamada de procedimento remoto</name>
+                    <name>AD Service: Remote Procedure Call</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -111,7 +111,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Cliente DNS</name>
+                    <name>AD Service: DNS Client</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -155,7 +155,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Estação de trabalho</name>
+                    <name>AD Service: Workstation</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -199,7 +199,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Gerente de conta de Segurança</name>
+                    <name>AD Service: Security Account Manager</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -243,7 +243,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Horário do Windows</name>
+                    <name>AD Service: Windows Time</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -287,7 +287,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Logon de rede</name>
+                    <name>AD Service: Network logon</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -331,7 +331,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Namespace de DFS</name>
+                    <name>AD Service: DFS Namespace</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -375,7 +375,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Replicação de arquivo</name>
+                    <name>AD Service: File Replication</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -463,7 +463,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Servidor DNS</name>
+                    <name>AD Service: DNS Server</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -507,7 +507,7 @@
                     </valuemap>
                 </item>
                 <item>
-                    <name>AD Service: Serviço de Perfil de Usuário</name>
+                    <name>AD Service: User Profile Service</name>
                     <type>0</type>
                     <snmp_community/>
                     <multiplier>0</multiplier>
@@ -559,8 +559,8 @@
     </templates>
     <triggers>
         <trigger>
-            <expression>{4Linux - Windows Server Active Directory:service_state[kdc].last(0)}#0</expression>
-            <name>Serviço KDC Kerberos não esta disponível em {HOST.NAME}</name>
+            <expression>{Template Windows Server Active Directory:service_state[kdc].last(0)}#0</expression>
+            <name>Kerberos KDC service is not available at {HOST.NAME}</name>
             <url/>
             <status>0</status>
             <priority>5</priority>
